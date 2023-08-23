@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group.acan.cfptdigital.HomeActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="300dp">
+
+
+              <LinearLayout
+                  android:id="@+id/seDeconnecter"
+                  android:layout_width="match_parent"
+                  android:layout_height="280dp"
+                  android:background="@drawable/gradientbackground"
+                  android:orientation="vertical">
+
+                  <ImageView
+                      android:id="@+id/btnRetour"
+                      android:layout_width="36dp"
+                      android:layout_height="36dp"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginTop="20dp"/>
+
+                  <ImageView
+                      android:layout_width="120dp"
+                      android:layout_height="120dp"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/ic_baseline_email_24" />
+
+                  <TextView
+                      android:id="@+id/tourBi"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="10dp"
+                      android:text="Réclamation"
+                      android:textColor="#fff"
+                      android:textSize="21sp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="10dp"
+                      android:text="Vous pouvez envoyer un mail."
+                      android:textColor="#fff"
+                      android:textSize="18sp" />
+
+              </LinearLayout>
+
+
+          </RelativeLayout>
+          <LinearLayout
+              android:layout_width="360dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:layout_marginTop="10dp">
+
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:id="@+id/edtEmail"
+                  android:background="@drawable/custom_edittext"
+                  android:hint="Destinataire"
+                  android:text="contact@cfptsj.sn"
+                  android:textColorHint="#000000"
+                  android:padding="8dp"
+                  android:textColor="#000000"
+                  android:editable="false"
+                  android:focusable="false"
+                  lorHighlight="@color/cardview_dark_background"
+                  android:layout_marginTop="20dp"/>
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:id="@+id/edtSujet"
+                  android:background="@drawable/custom_edittext"
+                  android:hint="Objet"
+                  android:textColorHint="#000000"
+                  android:padding="8dp"
+                  android:textColor="#000000"
+                  android:textColorHighlight="@color/cardview_dark_background"
+                  android:layout_marginTop="20dp"/>
+
+
+              <EditText
+                  android:id="@+id/edtMessage"
+                  lorHighlight="@color/cardview_dark_background"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="40dp"
+                  android:background="@drawable/custom_edittext"
+                  android:gravity="left"
+                  android:hint="Message"
+                  android:inputType="textMultiLine"
+                  android:lines="8"
+                  android:maxLines="10"
+                  android:minLines="6"
+                  android:scrollbars="vertical"
+                  android:textColor="@color/black"
+                  android:textColorHint="@color/black"
+                  android:padding="10dp"/>
+
+              <Button
+                  android:textColor="#FFFFFF"
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:id="@+id/btnSendMail"
+                  android:text="Envoyer"
+                  android:textSize="18sp"
+                  android:layout_marginTop="10dp"
+                  android:backgroundTint="@color/blue"
+                  app:cornerRadius = "20dp"/>
+
+
+
+
+
+          </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
